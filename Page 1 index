@@ -2,4 +2,13 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <index>
 <menu>
+<page>Accueil</page>
+<page>Economie</page>
+<page>Framasoft</page>
+<page>Media</page>
+<page>Définition RSS</page>
+<page>Avis sur le RSS</page>	
+</menu>
+<numgroupe>Groupe 9</numgroupe>
+<Etudiants_actif>Cleret Madison, Cucos Vadim, Denis Dimitri, Garcia Clara, Moumit Elyes, Ung Hoi Alexis</Etudiants_actif>	
 </index>
