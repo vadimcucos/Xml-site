@@ -1,1 +1,29 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+<index>
+<menu>
+<page>Accueil</page>
+<page>Economie</page>
+<page>Framasoft</page>
+<page>Media</page>
+<page>Définition RSS</page>
+<page>Avis sur le RSS</page>	
+</menu>
+<numgroupe>Groupe 9</numgroupe>
+<Etudiants_actif>Cleret Madison, Cucos Vadim, Denis Dimitri, Garcia Clara, Moumit Elyes, Ung Hoi Alexis</Etudiants_actif>	
+</index>
+</definition>
+Le Flux RSS est un outil très intéressant. En effet, avoir son propre flux d’abonnement
+RSS peut être très pratique, néanmoins, c’est un système un peu archaïque. Demander à
+l’utilisateur de développer un minimum de compétence pour pouvoir suivre ce qui
+l’intéresse est aujourd’hui impensable dans un marché où internet se centralise de plus
+en plus. En effet, les centres d’intérêts se centralisent de plus en plus sur des
+plateformes qui développent un monopole du contenu où le flux RSS n’a aucune chance
+face à un simple bouton d’abonnement qui en plus d’analyser et de montrer en direct le
+contenu de l’intéressé, son propre flux d’abonnement possède un algorithme qui le
+dirigera vers des recommandations. Les marques lui préférant notamment la newsletter
+ou l’emailing, où le tracking permet d’avoir un meilleur retour sur le comportement des
+utilisateurs, le flux RSS est donc noyé dans la facilité d’utilisation et “l’anonymat”qu’il propose
+par rapport à la concurrence. Cependant les flux RSS est toujours présent, et est d’une
+extrême importance pour redécentraliser le Web.
+</definition>
