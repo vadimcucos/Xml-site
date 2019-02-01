@@ -12,18 +12,81 @@
 <numgroupe>Groupe 9</numgroupe>
 <Etudiants_actif>Cleret Madison, Cucos Vadim, Denis Dimitri, Garcia Clara, Moumit Elyes, Ung Hoi Alexis</Etudiants_actif>	
 </index>
-</definition>
-Le Flux RSS est un outil très intéressant. En effet, avoir son propre flux d’abonnement
-RSS peut être très pratique, néanmoins, c’est un système un peu archaïque. Demander à
-l’utilisateur de développer un minimum de compétence pour pouvoir suivre ce qui
-l’intéresse est aujourd’hui impensable dans un marché où internet se centralise de plus
-en plus. En effet, les centres d’intérêts se centralisent de plus en plus sur des
-plateformes qui développent un monopole du contenu où le flux RSS n’a aucune chance
-face à un simple bouton d’abonnement qui en plus d’analyser et de montrer en direct le
-contenu de l’intéressé, son propre flux d’abonnement possède un algorithme qui le
-dirigera vers des recommandations. Les marques lui préférant notamment la newsletter
-ou l’emailing, où le tracking permet d’avoir un meilleur retour sur le comportement des
-utilisateurs, le flux RSS est donc noyé dans la facilité d’utilisation et “l’anonymat”qu’il propose
-par rapport à la concurrence. Cependant les flux RSS est toujours présent, et est d’une
-extrême importance pour redécentraliser le Web.
-</definition>
+  <Presentation>
+
+Présentation du RSS
+Le RSS (Really Simple Syndication) est une famille de format de données utilisées pour la
+syndication du contenu web. Les flux RSS en revanche sont une ressource web dont le
+contenu est produit automatiquement le plus souvent. Ils sont souvent utilisés pour
+présenter les titres des dernières actualités consultables en ligne comme par exemple les
+sites d’actualités ou les blogs.
+Histoire du RSS
+Le RSS a été créé par Netscape en 1999 en version 0.90 qui sera suivi de la version 0.91
+améliorée grâce à la société Userland en 2000. La version 1.0 arrive en 2000 définit O’Reilly,
+maintenue par le groupe RSS-DEV, basée sur RDF et s’appelant RDF Site Summary. En 2002
+arrive le RSS 2.0 définit par Dave Winer à l’Université d’Harvard.
+Usages :
+Pour l'utilisateur du web que je suis
+Simplicité : en 2 clics maxi, je m'abonne au flux du site / blog qui m'intéresse,
+Praticité : tous mes flux sont centralisés, agrégés et affichés au même endroit, Pour
+l'utilisateur du web que je suis
+En tant que consommateur de flux RSS depuis des années, il m'est facile de répondre à cette
+question. Et vous allez voir que les avantages sont bien plus nombreux que vous ne
+l'imaginez.
+1. Simplicité : en 2 clics maxi, je m'abonne au flux du site / blog qui m'intéresse,
+2. Praticité : tous mes flux sont centralisés, agrégés et affichés au même endroit,
+3. Confidentialité : je ne donne pas mon adresse mail, ma tranquillité est préservée,
+4. Efficacité : je peux trier et filtrer mes flux à partir d'un mot-clef, par exemple,
+5. Rapidité : dès qu'un contenu est publié, une alerte s'affiche dans mon navigateur,
+pour le propriétaire de site que je suis
+Là aussi, vous aller voir que pour l'éditeur du site, cet outil est bien plus utile que vous ne le
+pensez.
+1. Simplicité : la mise en œuvre d'un flux RSS se fait très simplement,
+2. Efficacité : une fois mis en place, vous n'avez rien à gérer et rien à maintenir,
+3. Confidentialité : vous n'imposez pas à vos lecteurs de s'inscrire pour vous lire,
+4. Rapidité : vos abonnés sont immédiatement informés de votre publication,
+5. Tranquillité : vous respectez l'expérience utilisateur lors de la navigation,
+Présentation technique :
+Un fichier XML définit le flux RSS, ce fichier XML contient pour l’ensemble des pages que l’on
+souhaite consulter une URL avec un titre et un résumé, ou, une personne souhaitant lire ce
+flux utilise son navigateur ou lit ce flux sur un lecteur, agrégateur. En dernière possibilité, un
+autre site veut afficher ce flux, il doit alors le télécharger afin d’extraire les informations (un
+simple script php permet d’accomplir cela).
+Sa structure est comme nous l’avons vu, un fichier XML, le conteneur global est une balise
+“RSS” (<rss>), cette balise contient au moins un canal (<channel>), ce canal désigne une
+source qui fournit l’information, il procure un certain nombre d’informations et d’éléments
+correspondant à des pages webs. Voici une structure simple d’un RSS possédant un canal :
+<rss version="2.0">
+<channel>
+information d’un site quelconque
+</channel>
+</rss>
+Après un bref résumé de comment fonctionne grossièrement un flux RSS, voici quelques
+balises descriptives obligatoires qui doivent figurer dans un canal : 
+title. le titre du canal
+link. Adresse (URL) du site web pour ce canal.
+description. Une phrase pour décrire le canal.
+plus au moins une balise item pour le contenu.
+La balise item doit contenir aussi quelques balises de ce type :
+title. Titre de l'article ou autre
+link. L'URL de la page.
+description. Résumé de l’article
+On a alors une structure de flux RSS pour un canal de ce type :
+<rss version="2.0">
+<channel>
+ <title>TITRE DU CANAL</title>
+ <link>URL PAGE</link>
+ <description>DESCRIPTION</description>
+ <item>
+<title>ARTICLE ou AUTRE</title>
+ <link>URL PAGE</link>
+<description>RESUME</description>
+ </item>
+</channel>
+</rss>
+Sans oublier que nous sommes dans un document XML, il faut donc ajouter ceci :
+<?xml version="1.0" ?>
+Afin de partager ce flux (sur notre site par exemple), il faut maintenant le rendre accessible,
+pour cela, il faut ajouter un bouton RSS sur une page, le plus souvent représenté comme
+ceci : ou .
+  </presentation>
